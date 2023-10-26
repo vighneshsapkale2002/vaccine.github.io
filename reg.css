@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.image {
+    
+    background-image: url(sa.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    
+
+}
+
+
+
+
+   
+
+
+
+
+

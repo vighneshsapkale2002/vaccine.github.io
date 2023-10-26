@@ -1,0 +1,177 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register form</title>
+  
+  <!--internal css-->
+  <style>
+    /* register form css */
+    body {
+      background: #323232;
+      background-image: url('piyu.jpg');
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      
+
+
+    }
+
+    .all {
+      width: 350px;
+      margin: auto;
+      background: #00adee;
+      margin-top: 50px;
+      padding: 5px;
+
+    }
+
+    form {
+      padding: 10px;
+      font-family: arial;
+      border: 1px dotted white;
+      margin: 10px;
+
+    }
+
+    h1 {
+      text-align: center;
+      background: orange;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+
+    }
+
+    button[type=submit] {
+      width: 95%;
+      background: green;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+
+    button[type=reset] {
+      width: 95%;
+      background: green;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method="POST">
+   
+  <!-- register form  coding-->
+
+  <div class="all">
+    <section>
+
+      <div class="reg">
+
+        <h1> Enter name:<input type="text" name="name" placeholder="FULL NAME" required></h1><br>
+
+        <h1> <label for="register">Choose a document type from this list:</label></h1>
+
+        <input list="reg" id="register" name="register" required>
+      
+        <datalist id="reg" >
+          
+          
+          <select name="option">
+           
+          <option value="AADHAR CARD">
+          <option value="PAN CARD">
+          <option value="DRIVING LICENCE CARD">
+          <option value="ELECTION CARD">
+          <option value="PASSPORT CARD">
+
+         
+          </select>
+          
+        </datalist>
+       
+       <!-- <input type="text" name="text" id="text" placeholder="DOCUMENT NO"> -->
+
+      </div>
+
+
+      <h2>UPLOAD<input type="file" id="file" name="file" value="file" required> </h2>
+      <br>
+      <h2>Age:<input type="number" name="age" placeholder="AGE" required></h2>
+      <br>
+      <h2>Mobile Number:<input type="number"  name="mnumber" placeholder="MOBILE NO" required></h2>
+      <br>
+      
+      <!--<h2>date:<input type="datetime-local" maxlength="2025" minlength="2022"></h2><br>-->
+
+      <div class="gender">
+        <form >
+          <h1>
+            <p>Gender:</p>
+          </h1>
+
+          <h2> <input type="radio" id="gendertype1" name="gender1" value="Male" required>
+            <label for="gendertype1">Male</label>
+          </h2><br>
+
+          <h2> <input type="radio" id="gendertype2" name="gender2" value="FEMALE" required>
+            <label for="gendertype2">Female</label>
+          </h2><br>
+
+          <h2> <input type="radio" id="gendertype3" name="gender3" value="OTHER" required>
+            <label for="contactChoice3">Other</label>
+          </h2><br>
+
+
+         <input type="reset" name="reset">
+
+         <input type="submit" name="submit">
+
+
+
+        
+
+
+        </form>
+    
+
+      </div>
+
+     
+    
+
+     
+    </section>
+
+  </div>
+
+</form>
+
+</body>
+
+</html>
+
+
